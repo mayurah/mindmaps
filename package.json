@@ -1,7 +1,7 @@
 {
   "name": "mindmaps",
   "description": "mindmaps is a prototype of an HTML5 based mind mapping application. It lets you create neat looking mind maps in the browser.",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "keywords": [
     "html5",
     "mindmap",
@@ -17,7 +17,8 @@
   },
   "scripts": {
     "start": "http-server ./src -p 3000",
-    "start:prod": "npm run build && cd bin && python -m SimpleHTTPServer 3000",
+    "start:prod-old": "npm run build && cd bin && python -m SimpleHTTPServer 3000",
+    "start:prod": "cd dist && python -m SimpleHTTPServer 80",
     "build": "jake"
   },
   "license": {
